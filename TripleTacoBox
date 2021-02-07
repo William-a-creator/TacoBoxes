@@ -1,0 +1,21 @@
+public class TripleTacoBox implements TacoBox{
+
+    private int tacos;
+    public TripleTacoBox(){
+        this.tacos = tacos;
+        this.tacos = 3;
+    }
+    @Override
+    public int tacosRemaining() {
+        if ( tacos < 0){
+            tacos = 0;
+        }
+        return tacos;
+    }
+
+    @Override
+    public void eat() {
+        tacos --;
+    }
+    
+}
